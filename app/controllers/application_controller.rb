@@ -20,7 +20,5 @@ class ApplicationController < ActionController::Base
       @comment.article_id = @article.id
   end
 
-
-
   protect_from_forgery with: :exception
 end
