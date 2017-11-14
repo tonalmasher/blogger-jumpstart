@@ -10,6 +10,11 @@ class ArticlesController < ApplicationController
       redirect_to article_path(@article)
   end
 
+  # def show
+  #   @comment = Comment.new
+  #   @comment.article_id = @article.id
+  # end
+
   def edit
     @article = Article.find(params[:id])
   end
