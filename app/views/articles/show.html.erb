@@ -2,4 +2,8 @@
 <p>
   <%= @article.body %>
 </p>
+<%= link_to "edit", edit_article_path(@article) %>
+<%= link_to "delete", article_path(@article), method: :delete,
+    data: {confirm: "Are you sure you want to delete?"}
+    %><br />
 <%= link_to "Return to Posts", articles_path %>
